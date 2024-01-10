@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NanNan - Đất Sét Tự Khô Sáng Tạo - Liên Hệ</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var lastScrollTop = 0,
+      delta = 180;
+      $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+
+        if (Math.abs(lastScrollTop - st) <= delta) return;
+        if (st > lastScrollTop && lastScrollTop > 0) {
+          // downscroll code
+          $("header").css("top", "-150px");
+        } else {
+          // upscroll code
+          $("header").css("top", "0px");
+        }
+        lastScrollTop = st;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="left-side">
+        <a href="index.html">
+          <img src="images/logo.png">
+        </a>
+      </div>
+      <div class="right-side">
+        <div class="registration-form">
+          <ul>
+            <li><span class="material-symbols-outlined">call</span></li>
+            <li><strong>Điện thoại : +(62) 123 456 7890</strong></li>
+            <li>Đăng Ký</li>
+            <li>Đăng Nhập</li>
+            <li><span class="material-symbols-outlined">search</span></li>
+          </ul>
+
+
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+           <button class="dropbtn nav-home">Trang Chủ 
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="index.html">Trang Chủ</a>
+             <a href="#">Sứ Mệnh</a>
+             <a href="#">Hệ Thống Cửa Hàng</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn nav-events">Sự Kiện 
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Hot News</a>
+             <a href="#">Workshop</a>
+             <a href="#">Sự Kiện Doanh Nghiệp</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn nav-pages">Giới Thiệu
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Về Chúng Tôi</a>
+             <a href="#">Lớp Cho Bé</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn nav-gallery">Thư Viện 
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Hình Ảnh</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn nav-news">News 
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Tin Hot Trong Tuần</a>
+             <a href="#">Thư Giãn</a>
+             <a href="#">Giải Trí</a>
+           </div>
+         </div>
+         <a href="#" style="border-top: 2px solid #c66196; color: #c66196;">Liên Hệ</a>
+
+       </div>
+
+     </div>
+   </div>
+
+ </header>
+
+ <div class="main">
+  <div class="location-widget">
+
+  </div>
+  <div class="contact-widget" style="margin-top: 250px;">
+    <div class="contact-card location">
+      <div class="contact-icon">
+        <span class="material-symbols-outlined">location_on</span>
+      </div>
+      <div class="contact-title">
+        <h3>Địa Chỉ</h3>
+      </div>
+      <div class="contact-description">
+        <p>Nashville 09 First Floor Downtown st, Victoria, Australia – 0078</p>
+      </div>
+    </div>
+    <div class="contact-card phone">
+      <div class="contact-icon">
+        <span class="material-symbols-outlined">phone_in_talk</span>
+      </div>
+      <div class="contact-title">
+        <h3>Điện Thoại</h3>
+      </div>
+      <div class="contact-description">
+        <p>+(62) 123 456 7890</p>
+        <p>+(62) 123 456 7893</p>
+      </div>
+    </div>
+    <div class="contact-card email">
+      <div class="contact-icon">
+        <span class="material-symbols-outlined">mail</span>
+      </div>
+      <div class="contact-title">
+        <h3>Email Id</h3>
+      </div>
+      <div class="contact-description">
+        <p>DatsetNanNan@Support.com</p>
+        <p>YourAddress@info.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-widget">
+    <h4><span style="color: #8373ce;">Gửi Yêu Cầu</span> <span style="color: #f8b54d;">Cho Chúng Tôi</span></h4>
+    <div class="form">
+      <div class="row">
+        <div class="field" style="position: relative; left: 2.5%;">
+          <input type="text" name="fullname" placeholder="Họ Tên *">
+        </div>
+        <div class="field" style="position: relative; right: 2.5%;">
+          <input type="email" name="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="field" style="position: relative; left: 2.5%;">
+          <input type="phone" name="phone" placeholder="Điện Thoại *">
+        </div>
+        <div class="field" style="position: relative; right: 2.5%;">
+          <input type="text" name="subject" placeholder="Yêu Cầu">
+        </div>
+      </div>
+      <div class="row">
+        <div class="field-area">
+          <textarea name="textarea" placeholder="Nội Dung Chi Tiết"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="submit-button">
+          <input type="submit" value="Gửi Ngay">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="left-side">
+    <a href="index.html">
+      <img src="images/logo.png">
+    </a>
+  </div>
+  <div class="right-side">
+    <div class="right-top">
+      <div>Trang Chủ</div>
+      <div>Sự Kiện</div>
+      <div>Giới Thiệu</div>
+      <div>Thư Viện</div>
+      <div>News</div>
+      <div>Liên Hệ</div>
+    </div>
+    <div class="line"></div>
+    <div class="right-bottom">
+      <div>Bản quyền thuộc về © NanNan 2024. Đã đăng ký.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/owl.carousel.js"></script> 
+<script src="js/control.js"></script>
+</body>
+</html>
