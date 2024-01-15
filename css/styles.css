@@ -14,6 +14,7 @@ header {
   transition: 0.5s ease;
   width: 100%;
   border-bottom: 0.5px solid grey;
+  z-index: 5;
 }
 
 .header-wrapper {
@@ -468,7 +469,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 100px 25px;
+  padding: 50px 0;
   justify-content: center;
   background-color: #84bed6;
 
@@ -486,10 +487,18 @@ header {
       text-align: center;
 
       img {
-        width: 200px;
-        height: 200px;
+        width: 175px;
+        height: 175px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
+        filter: sepia(0%);
+        transition: filter 0.5s;
+        z-index: -1;
+      }
+
+      img:hover {
+        filter: sepia(100%);
+
       }
 
       h4 {
@@ -526,6 +535,109 @@ header {
   }
 
 
+}
+
+.gallery-widget {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px 0;
+
+  h4 {
+    font-family: Bubblegum Sans;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ff8454;
+    padding-right: 20px;
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .card {
+    width: 25%;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+    margin-bottom: -100px;
+
+    img {
+      width: 270px;
+      height: 270px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      transition: background-color 0.5s;
+      filter: opacity(100%);
+      transition: filter 0.5s;
+    }
+
+    div {
+      position: relative;
+      bottom: 45%;
+      display: flex;
+      flex-shrink: 3;
+
+      span {
+
+        padding: 15px;
+        border: 1px solid #ff8454;
+        color: #fff;
+        background-color: #ff8454;
+        margin: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        width: fit-content;
+      }
+
+      span:hover {
+        color: #ff8454;
+        background-color: #fff;
+      }
+    }
+    
+
+    h5 {
+      font-family: Bubblegum Sans;
+      font-weight: 300;
+      font-size: 20px;
+      color: #fff;
+      width: 100%;
+      position: relative;
+      bottom: 50%;
+      padding-top: 30px;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 2s linear, padding-top 1.5s;
+    }
+
+    h5:hover {
+      color: #ff8454;
+    }
+  }
+
+  .card:hover {
+    padding-bottom: 25px;
+
+    img {
+      filter: opacity(30%);
+    }
+    span {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    h5 {
+      visibility: visible;
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
 }
 
 .contact-widget {
